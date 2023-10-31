@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-ycfa
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/stonesoup_perfscale/ci1t-43256-0059-tenant/ci1t-43256-0059-app/devfile-sample-ycfa@sha256:663d0ac787c1f58eec3ea58f58f4299cc490542147bed449f1a055c905203850
+        name: my-nodejs
+        resources: {}
+status: {}
